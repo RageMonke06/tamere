@@ -1,9 +1,9 @@
 {
 
-    "OWNER_ID":"",
-    "BOT_TOKEN": "",
+    "OWNER_ID":"653556085503819776",
+    "BOT_TOKEN": "OTM1NjI4NzQ0NTE1NzkyOTk2.GNj8r0.kXUT4QOvnSpUGxLE8AfPPVX8ES2i2bftu-QZlA",
     "tenorAPI":"",
-    "DEFAULT_PREFIX":"",
+    "DEFAULT_PREFIX":".",
     "mongoPass": "",
     "ERROR_LOGS_CHANNEL": "",
     "YT_COOKIE": ""
