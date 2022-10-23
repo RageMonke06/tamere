@@ -64,7 +64,7 @@ process.on("uncaughtException", (err) => {
   .setTitle("Uncaught Exception")
   .setDescription(`${err}`)
   .setColor("Red")
-  client.channels.cache.get(ERROR_LOGS_CHANNEL).send({ embeds: [exceptionembed] })
+  client.channels.cache.get(secrets.ERROR_LOGS_CHANNEL).send({ embeds: [exceptionembed] })
 });
 
 process.on("unhandledRejection", (reason, promise) => {
@@ -82,10 +82,10 @@ process.on("unhandledRejection", (reason, promise) => {
     { name: "Reason", value: `${reason.message}` },
   ])
   .setColor("Red")
-  client.channels.cache.get(ERROR_LOGS_CHANNEL).send({ embeds: [rejectionembed] })
+  client.channels.cache.get(secrets.ERROR_LOGS_CHANNEL).send({ embeds: [rejectionembed] })
 });
 
-client.login(BOT_TOKEN).then(() => {
+client.login(secrets.BOT_TOKEN).then(() => {
   console.log(
     chalk.bgBlueBright.black(
       ` Successfully logged in as: ${client.user.tag}`
